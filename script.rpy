@@ -6,22 +6,29 @@
 define e = Character("Eileen")
 define shinjini = Character(_("Shinjini"), color = "#47e0ff", image = "shinjini")
 image shinjini = "c_shinjini_normal.png"
-image shinjini blush = "shinjini_blush.png"
-image shinjini glasses = "shinjini_glasses.png"
+image shinjini blush = "c_shinjini_blush.png"
+image shinjini glasses = "c_shinjini_glasses.png"
 image side shinjini = "shinjini_portrait.png"
 
 define irene = Character(_("Irene"), color = "#0000ff", image = "irene")
-<<<<<<< HEAD
 image irene = "irene_normal.png"
 image side irene = "irene_portrait.png"
 
-define steven = Character(_("Irene"), color = "#00ff00", image = "steven")
+define steven = Character(_("Masked Man"), color = "#00ff00", image = "steven")
 image steven = "steven_normal.png"
 image side steven = "steven_portrait.png"
 
 define aristotle = Character(_("Aristotle"), color = "#DEB887", image = "aristotle")
 image aristotle  = "aristotle_normal.png"
 image side aristotle = "aristotle_portrait.png"
+
+define nicola = Character(_("Noircola"), color = "#00E5EE", image = "nicola")
+image nicola = "c_noire_normal.png"
+image side nicola = "noire_portrait.png"
+
+define james = Character(_("Juni"), color = "#00E5EE", image = "james")
+image james = "c_uni_normal.png"
+image side james = "uni_portrait.png"
 
 image bg bedroom = "bg/bg_bedroom.jpg"
 image bg hall4 = "bg/bg_hall4.jpg"
@@ -36,16 +43,6 @@ define mus_alone = "music/m_sspace.mp3"
 define mus_scary = "music/m_darkness.mp3"
 define mus_steven = "music/m_mask.mp3"
 define mus_nicola = "music/m_race.mp3"
-=======
-    image irene = "irene_normal.png"
-    image side irene = "irene_portrait.png"
-define steven = Character(_("Irene"), color = "#00ff00", image = "steven")
-    image steven = "steven_normal.png"
-    image side steven = "steven_portrait.png"
-define aristotle = Character(_("Aristotle"), color = "#DEB887", image = "aristotle")
-    image aristotle = "aristotle_normal.png"
-	image side
->>>>>>> 648536358f66270eb42ff1cf40ae5fd0cfaa1c5a
 
 
 transform walkin(initialx, endx):
@@ -76,9 +73,17 @@ label start:
     
     show irene at appear(.75) with dissolve
     irene "Shinjini, get the @#$* up!"
-    show shinjini at walkin(-.9, .25)
+    show shinjini at walkin(-.9, .2)
     shinjini "Nauoooo..."
-    irene ""
+    irene "lol"
+    show steven at appear(.5) with dissolve
+    steven "I SHALL CONSUME HUMANITY."
+    hide steven with dissolve
+    show nicola at appear(.5) with dissolve
+    nicola "Oh, why am I a girl?!"
+    hide irene
+    show james at appear(.8) with dissolve
+    james "Feels bad, man."
 
 
     shinjini "You've created a new Ren'Py game."
