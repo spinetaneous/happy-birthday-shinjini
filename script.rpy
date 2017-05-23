@@ -10,7 +10,14 @@ define shinjini = Character(_("Shinjini"), color = "#47e0ff", image = "shinjini"
     image shinjini glasses = "shinjini_glasses.png"
     image side shinjini = "shinjini_portrait.png"
 define irene = Character(_("Irene"), color = "#0000ff", image = "irene")
-    image irene = "
+    image irene = "irene_normal.png"
+    image side irene = "irene_portrait.png"
+define steven = Character(_("Irene"), color = "#00ff00", image = "steven")
+    image steven = "steven_normal.png"
+    image side steven = "steven_portrait.png"
+define aristotle = Character(_("Aristotle"), color = "#DEB887", image = "aristotle")
+    image aristotle = "aristotle_normal.png"
+	image side
 
 # The game starts here.
 
