@@ -5,36 +5,74 @@
 
 define e = Character("Eileen")
 define shinjini = Character(_("Shinjini"), color = "#47e0ff", image = "shinjini")
-    image shinjini= "shinjini_normal.png"
-    image shinjini blush = "shinjini_blush.png"
-    image shinjini glasses = "shinjini_glasses.png"
-    image side shinjini = "shinjini_portrait.png"
-define irene = Character(_("Irene"), color = "#0000ff", image = "irene")
-    image irene = "
+image shinjini = "c_shinjini_normal.png"
+image shinjini blush = "shinjini_blush.png"
+image shinjini glasses = "shinjini_glasses.png"
+image side shinjini = "shinjini_portrait.png"
 
+define irene = Character(_("Irene"), color = "#0000ff", image = "irene")
+image irene = "irene_normal.png"
+image side irene = "irene_portrait.png"
+
+define steven = Character(_("Irene"), color = "#00ff00", image = "steven")
+image steven = "steven_normal.png"
+image side steven = "steven_portrait.png"
+
+define aristotle = Character(_("Aristotle"), color = "#DEB887", image = "aristotle")
+image aristotle  = "aristotle_normal.png"
+image side aristotle = "aristotle_portrait.png"
+
+image bg bedroom = "bg/bg_bedroom.jpg"
+image bg hall4 = "bg/bg_hall4.jpg"
+image bg lounge4 = "bg/bg_lounge4.jpg"
+image bg stairs = "bg/bg_stairs.jpg"
+image bg lounge3 = "bg/bg_lounge3.jpg"
+
+define mus_opening = "music/m_magicant.mp3"
+define mus_relax = "music/pisaloon.mp3"
+define mus_nowwhat = "music/uranus.mp3"
+define mus_alone = "music/m_sspace.mp3"
+define mus_scary = "music/m_darkness.mp3"
+define mus_steven = "music/m_mask.mp3"
+define mus_nicola = "music/m_race.mp3"
+
+
+transform walkin(initialx, endx):
+    zoom 0.8
+    xalign initialx yalign 1.0
+    linear 1.5 xalign endx
+    pause (.5)
+
+transform appear (x):
+    zoom .8
+    xalign x yalign 1.0
+    pause (.5)
 # The game starts here.
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
 
-    scene bg room
+    scene bg bedroom with fade
+    play music mus_opening
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show eileen happy
 
     # These display lines of dialogue.
 
-    "Hello, world."
+    "Mmmm... Bunnies... I wanna be a bunny..."
+    "Mmmm... Bob, I love you too..."
+    "Shinjini, wake up!"
+    "Huh?"
+    
+    show irene at appear(.75) with dissolve
+    irene "Shinjini, get the @#$* up!"
+    show shinjini at walkin(-.9, .25)
+    shinjini "Nauoooo..."
+    irene ""
 
-    e "You've created a new Ren'Py game."
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    shinjini "You've created a new Ren'Py game."
+
+    shinjini "Once you add a story, pictures, and music, you can release it to the world!"
 
     # This ends the game.
 
