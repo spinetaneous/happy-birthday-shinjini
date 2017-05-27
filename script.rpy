@@ -11,7 +11,10 @@ image side shinjini = "shinjini_portrait.png"
 
 define irene = Character(_("Irene"), color = "#0000ff", image = "irene")
 image irene = "irene_normal.png"
+<<<<<<< HEAD
 image irene flip = im.Flip("irene_normal.png", horizontal=True)
+=======
+>>>>>>> dcf0f874a33272aa112dfb1c87bba5915bce99a2
 image side irene = "irene_portrait.png"
 
 define steven = Character(_("Masked Man"), color = "#00ff00", image = "steven")
@@ -19,7 +22,15 @@ image steven = "steven_normal.png"
 image side steven = "steven_portrait.png"
 
 define aristotle = Character(_("Aristotle"), color = "#DEB887", image = "aristotle")
+<<<<<<< HEAD
 image aristotle  = "c_aristotle_normal.png"
+image side aristotle = "aristotle_portrait.png"
+
+define nicola = Character(_("Noircola"), color = "#00E5EE", image = "nicola")
+image nicola = "c_noire_normal.png"
+image side nicola = "noire_portrait.png"
+=======
+image aristotle  = "aristotle_normal.png"
 image side aristotle = "aristotle_portrait.png"
 
 define nicola = Character(_("Noircola"), color = "#00E5EE", image = "nicola")
@@ -30,6 +41,39 @@ define james = Character(_("Juni"), color = "#00E5EE", image = "james")
 image james = "c_uni_normal.png"
 image side james = "uni_portrait.png"
 
+image bg bedroom = "bg/bg_bedroom.jpg"
+image bg hall4 = "bg/bg_hall4.jpg"
+image bg lounge4 = "bg/bg_lounge4.jpg"
+image bg stairs = "bg/bg_stairs.jpg"
+image bg lounge3 = "bg/bg_lounge3.jpg"
+
+define mus_opening = "music/m_magicant.mp3"
+define mus_relax = "music/pisaloon.mp3"
+define mus_nowwhat = "music/uranus.mp3"
+define mus_alone = "music/m_sspace.mp3"
+define mus_scary = "music/m_darkness.mp3"
+define mus_steven = "music/m_mask.mp3"
+define mus_nicola = "music/m_race.mp3"
+
+
+transform walkin(initialx, endx):
+    zoom 0.8
+    xalign initialx yalign 1.0
+    linear 1.5 xalign endx
+    pause (.5)
+
+transform appear (x):
+    zoom .8
+    xalign x yalign 1.0
+    pause (.5)
+# The game starts here.
+>>>>>>> dcf0f874a33272aa112dfb1c87bba5915bce99a2
+
+define james = Character(_("Juni"), color = "#00E5EE", image = "james")
+image james = "c_uni_normal.png"
+image side james = "uni_portrait.png"
+
+<<<<<<< HEAD
 define austin = Character(_("4u571n"), color = "#8b0000", image = "austin")
 image austin_animated:
     "c_giygaustin/011.png"
@@ -65,6 +109,12 @@ define mus_nicola = "music/m_race.mp3"
 define scream = "sound/Wilhelm_Scream.ogg"
 define scare_chord = "sound/scare_chord.mp3"
 define caught_pokemon = "sound/caught_pokemon.mp3"
+=======
+
+    scene bg bedroom with fade
+    play music mus_opening
+
+>>>>>>> dcf0f874a33272aa112dfb1c87bba5915bce99a2
 
 transform walkin(initialx, endx):
     zoom 0.8
@@ -72,6 +122,7 @@ transform walkin(initialx, endx):
     linear 1.5 xalign endx
     pause (.5)
 
+<<<<<<< HEAD
 transform appear (x):
     zoom .8
     xalign x yalign 1.0
@@ -107,6 +158,31 @@ label start:
     stop music
     play sound scream
     with hpunch
+=======
+    "Mmmm... Bunnies... I wanna be a bunny..."
+    "Mmmm... Bob, I love you too..."
+    "Shinjini, wake up!"
+    "Huh?"
+    
+    show irene at appear(.75) with dissolve
+    irene "Shinjini, get the @#$* up!"
+    show shinjini at walkin(-.9, .2)
+    shinjini "Nauoooo..."
+    irene "lol"
+    show steven at appear(.5) with dissolve
+    steven "I SHALL CONSUME HUMANITY."
+    hide steven with dissolve
+    show nicola at appear(.5) with dissolve
+    nicola "Oh, why am I a girl?!"
+    hide irene
+    show james at appear(.8) with dissolve
+    james "Feels bad, man."
+
+
+    shinjini "You've created a new Ren'Py game."
+
+    shinjini "Once you add a story, pictures, and music, you can release it to the world!"
+>>>>>>> dcf0f874a33272aa112dfb1c87bba5915bce99a2
 
     irene "Ooh, spooky. :o"
     shinjini "Was that... James?!"
