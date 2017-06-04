@@ -508,6 +508,32 @@ label cont:
     
     #show explosion at appear(.5)
     #
+    show rinoa #FIXME lol
+    shinjini "Steven!?"
+    rinoa "Yeah :("
+    nicola "What were you doing there?"
+    rinoa "Uh, nothing..."
+    rinoa "It was getting cramped in there, so I accidentally made a loud noise."
+    rinoa "But anyway! Do you guys know what's going on?"
+    james "gg no one knows lol"
+    james "mental go plot XD"
+    nicola "Everyone's a waifu{nw}"
+    irene "you mean derpy anime drawing{nw}"
+    nicola "Everyone's a waifu drawing for some reason."
+    rinoa "I heard some weird noises coming from the trash room earlier."
+    rinoa "Maybe we should check it out?"
+    shinjini "..."
+    irene "That definitely sounds like a trap."
+    nicola "It's our only lead...{nw}"
+    james "lol seriously mental go plot"
+    nicola "Let's just go."
+    
+    #change to trash room lol
+    nicola "We should check the bins and see if anyone's here."
+    #lights turn off
+    #james scream
+    #irene is waifu'd
+    
     
     # This ends the game.
 
