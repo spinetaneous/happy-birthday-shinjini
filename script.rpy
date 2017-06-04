@@ -510,18 +510,18 @@ label cont:
     #
     show rinoa #FIXME lol
     shinjini "Steven!?"
-    rinoa "Yeah :("
+    rinoa "yeah :("
     nicola "What were you doing there?"
-    rinoa "Uh, nothing..."
-    rinoa "It was getting cramped in there, so I accidentally made a loud noise."
-    rinoa "But anyway! Do you guys know what's going on?"
+    rinoa "nothin"
+    rinoa "it's so cramped in there :( accidentally hit my head"
+    rinoa "but anyway!!! what's going on"
     james "gg no one knows lol"
     james "mental go plot XD"
     nicola "Everyone's a waifu{nw}"
     irene "you mean derpy anime drawing{nw}"
     nicola "Everyone's a waifu drawing for some reason."
-    rinoa "I heard some weird noises coming from the trash room earlier."
-    rinoa "Maybe we should check it out?"
+    rinoa "i heard some weird noises from the trash room earlier"
+    rinoa "maybe we should check it out?"
     shinjini "..."
     irene "That definitely sounds like a trap."
     nicola "It's our only lead...{nw}"
@@ -533,7 +533,22 @@ label cont:
     #lights turn off
     #james scream
     #irene is waifu'd
-    
+    w_irene "ok so it was totally a trap
+    #steven appears from the door
+    #door open noise
+    steven "no it wasn't{nw}"
+    w_irene "yes it was{nw}"
+    steven "lol yeah it was"
+    shinjini "Wait, if Steven is Rinoa..."
+    shinjini "And Steven is also standing right there..."
+    steven "i'm not steven i'm masked man{nw}"
+    w_irene "you're steven{nw}"
+    steven "masked man{nw}"
+    shinjini "Who's the Rinoa girl?"
+    rinoa "..."
+    rinoa "......"
+    rinoa "........."
+    rinoa "It seems the time has come."
     
     # This ends the game.
 
