@@ -11,10 +11,7 @@ image side shinjini = "shinjini_portrait.png"
 
 define irene = Character(_("Irene"), color = "#0000ff", image = "irene")
 image irene = "irene_normal.png"
-<<<<<<< HEAD
 image irene flip = im.Flip("irene_normal.png", horizontal=True)
-=======
->>>>>>> dcf0f874a33272aa112dfb1c87bba5915bce99a2
 image side irene = "irene_portrait.png"
 
 define steven = Character(_("Masked Man"), color = "#00ff00", image = "steven")
@@ -22,99 +19,139 @@ image steven = "steven_normal.png"
 image side steven = "steven_portrait.png"
 
 define aristotle = Character(_("Aristotle"), color = "#DEB887", image = "aristotle")
-<<<<<<< HEAD
 image aristotle  = "c_aristotle_normal.png"
 image side aristotle = "aristotle_portrait.png"
 
 define nicola = Character(_("Noircola"), color = "#00E5EE", image = "nicola")
 image nicola = "c_noire_normal.png"
 image side nicola = "noire_portrait.png"
-=======
-image aristotle  = "aristotle_normal.png"
-image side aristotle = "aristotle_portrait.png"
-
-define nicola = Character(_("Noircola"), color = "#00E5EE", image = "nicola")
-image nicola = "c_noire_normal.png"
-image side nicola = "noire_portrait.png"
 
 define james = Character(_("Juni"), color = "#00E5EE", image = "james")
 image james = "c_uni_normal.png"
 image side james = "uni_portrait.png"
 
-image bg bedroom = "bg/bg_bedroom.jpg"
-image bg hall4 = "bg/bg_hall4.jpg"
-image bg lounge4 = "bg/bg_lounge4.jpg"
-image bg stairs = "bg/bg_stairs.jpg"
-image bg lounge3 = "bg/bg_lounge3.jpg"
-
-define mus_opening = "music/m_magicant.mp3"
-define mus_relax = "music/pisaloon.mp3"
-define mus_nowwhat = "music/uranus.mp3"
-define mus_alone = "music/m_sspace.mp3"
-define mus_scary = "music/m_darkness.mp3"
-define mus_steven = "music/m_mask.mp3"
-define mus_nicola = "music/m_race.mp3"
-
-
-transform walkin(initialx, endx):
-    zoom 0.8
-    xalign initialx yalign 1.0
-    linear 1.5 xalign endx
-    pause (.5)
-
-transform appear (x):
-    zoom .8
-    xalign x yalign 1.0
-    pause (.5)
-# The game starts here.
->>>>>>> dcf0f874a33272aa112dfb1c87bba5915bce99a2
-
-define james = Character(_("Juni"), color = "#00E5EE", image = "james")
-image james = "c_uni_normal.png"
-image side james = "uni_portrait.png"
-
-<<<<<<< HEAD
 define austin = Character(_("4u571n"), color = "#8b0000", image = "austin")
-image austin_animated:
+image austin:
     "c_giygaustin/011.png"
-    pause .2
+    pause .5
     "c_giygaustin/012.png"
-    pause .2
+    pause .5
     "c_giygaustin/013.png"
-    pause .2
+    pause .5
     "c_giygaustin/014.png"
-    pause .2
+    pause .5
     "c_giygaustin/013.png"
-    pause .2
+    pause .5
     "c_giygaustin/012.png"
-    pause .2
+    pause .5
     repeat
 image side austin_portrait = "austin_portrait.png"
 
+image investigation movie = Movie(channel="movie", play="bg/investigation.mkv")
+image irene_phone = "bg/c_irenephone.png"
+
+image m_0 = "mess/m_0.jpg"
+image m_1 = "mess/m_1.jpg"
+image m_2 = "mess/m_2.jpg"
+image m_3 = "mess/m_3.jpg"
+image m_4 = "mess/m_4.jpg"
+
+image m_5a = "mess/m_5a.jpg"
+image m_6a = "mess/m_6a.jpg"
+image m_7a = "mess/m_7a.jpg"
+image m_8a = "mess/m_8a.jpg"
+image m_9a = "mess/m_9a.jpg"
+image m_10a = "mess/m_10a.jpg"
+image m_11a = "mess/m_11a.jpg"
+
+image m_5b = "mess/m_5b.jpg"
+image m_6b = "mess/m_6b.jpg"
+image m_7b = "mess/m_7b.jpg"
+image m_8b = "mess/m_8b.jpg"
+image m_9b = "mess/m_9b.jpg"
+image m_10b = "mess/m_10b.jpg"
+
+image m_5c = "mess/m_5c.jpg"
+image m_6c = "mess/m_6c.jpg"
+image m_7c = "mess/m_7c.jpg"
+image m_8c = "mess/m_8c.jpg"
+image m_9c = "mess/m_9c.jpg"
+image m_10c = "mess/m_10c.jpg"
+image m_11c = "mess/m_11c.jpg"
+
+image bg black = "bg/bg_black.jpg"
+image bg white = "bg/bg_white.jpg"
 image bg bedroom = "bg/bg_bedroom.jpg"
 image bg bedroom_r = "bg/bg_bedroom_r.jpg"
 image bg hall4 = "bg/bg_hall4.jpg"
 image bg lounge4 = "bg/bg_lounge4.jpg"
 image bg stairs = "bg/bg_stairs.jpg"
 image bg lounge3 = "bg/bg_lounge3.jpg"
+image bg lounge3_garbage = "bg/bg_lounge3_garbage.jpg"
+image bg lounge3_r:
+        "bg/data/000.png"
+        pause .1
+        "bg/data/001.png"
+        pause .1
+        "bg/data/002.png"
+        pause .1
+        "bg/data/003.png"
+        pause .1
+        "bg/data/004.png"
+        pause .1
+        "bg/data/005.png"
+        pause .1
+        "bg/data/006.png"
+        pause .1
+        "bg/data/007.png"
+        pause .1
+        "bg/data/008.png"
+        pause .1
+        "bg/data/009.png"
+        pause .1
+        "bg/data/010.png"
+        pause .1
+        "bg/data/011.png"
+        pause .1
+        "bg/data/010.png"
+        pause .1
+        "bg/data/009.png"
+        pause .1
+        "bg/data/008.png"
+        pause .1
+        "bg/data/007.png"
+        pause .1
+        "bg/data/006.png"
+        pause .1
+        "bg/data/005.png"
+        pause .1
+        "bg/data/004.png"
+        pause .1
+        "bg/data/003.png"
+        pause .1
+        "bg/data/002.png"
+        pause .1
+        "bg/data/001.png"
+        pause .1
+        repeat
+
 
 define mus_opening = "music/m_magicant.mp3"
 define mus_relax = "music/pisaloon.mp3"
 define mus_nowwhat = "music/uranus.mp3"
-define mus_alone = "music/m_sspace.mp3"
+define mus_spooky = "music/m_sspace.mp3"
+define mus_alone = "music/j_ship.mp3"
 define mus_scary = "music/m_darkness.mp3"
 define mus_steven = "music/m_mask.mp3"
 define mus_nicola = "music/m_race.mp3"
+define mus_giygas = "music/giygas.mp3"
 
 define scream = "sound/Wilhelm_Scream.ogg"
 define scare_chord = "sound/scare_chord.mp3"
 define caught_pokemon = "sound/caught_pokemon.mp3"
-=======
-
-    scene bg bedroom with fade
-    play music mus_opening
-
->>>>>>> dcf0f874a33272aa112dfb1c87bba5915bce99a2
+define message = "sound/message.mp3"
+define message_sent = "sound/message_sent.mp3"
+define clang = "sound/clang.mp3"
 
 transform walkin(initialx, endx):
     zoom 0.8
@@ -122,11 +159,19 @@ transform walkin(initialx, endx):
     linear 1.5 xalign endx
     pause (.5)
 
-<<<<<<< HEAD
 transform appear (x):
     zoom .8
     xalign x yalign 1.0
     pause (.5)
+
+
+transform imgpos:
+    zoom .973
+    xalign 0.5 
+    yanchor 0
+    ypos 58
+    pause (.5)
+    
 # The game starts here.
 
 label start:
@@ -158,31 +203,6 @@ label start:
     stop music
     play sound scream
     with hpunch
-=======
-    "Mmmm... Bunnies... I wanna be a bunny..."
-    "Mmmm... Bob, I love you too..."
-    "Shinjini, wake up!"
-    "Huh?"
-    
-    show irene at appear(.75) with dissolve
-    irene "Shinjini, get the @#$* up!"
-    show shinjini at walkin(-.9, .2)
-    shinjini "Nauoooo..."
-    irene "lol"
-    show steven at appear(.5) with dissolve
-    steven "I SHALL CONSUME HUMANITY."
-    hide steven with dissolve
-    show nicola at appear(.5) with dissolve
-    nicola "Oh, why am I a girl?!"
-    hide irene
-    show james at appear(.8) with dissolve
-    james "Feels bad, man."
-
-
-    shinjini "You've created a new Ren'Py game."
-
-    shinjini "Once you add a story, pictures, and music, you can release it to the world!"
->>>>>>> dcf0f874a33272aa112dfb1c87bba5915bce99a2
 
     irene "Ooh, spooky. :o"
     shinjini "Was that... James?!"
@@ -272,7 +292,222 @@ label start:
     shinjini "Aw, let's go down to the third floor..."
     
     scene bg lounge3 with fade
+    show irene flip at walkin (-.9, .1)
+    show shinjini at walkin (-.9, .25)
+    shinjini "Oh, look, There's Austin. He doesn't look very happy right now."
+    irene "Wut.{p=1} The.{p=1} #$@*."
+    scene bg lounge3_r with dissolve
+    play music mus_giygas fadein 1
+    pause 3
+    show austin at appear(.5) with dissolve
+    pause 1
+    austin "Oh, hey Shinjini, Irene."
+    james "Ah!!! So disturbing. I think I died on the inside a bit."
+    irene "Why do you look like a swirly energy thingie, lol?"
+    austin "I don't know, but I need to study chem."
+    irene "Don't you have more important things? Like, how can you even study?"
+    austin "I can still hold a pencil."
+    austin "GPA is forever."
+    shinjini "Shinjini wonders if you are possessed by a demon. Is he a nice demon?"
+    austin "Uhhh... Probably not. But I have a midterm to study for now, so go away."
+    shinjini "Awww..."
+    irene "But we live here, fool. You came here."
+    austin "Go away."
     
+    stop music
+    
+    scene bg lounge3_garbage with fade
+    play music mus_alone
+    show james at walkin (-.9, .35)
+    show irene flip at walkin (-.9, .1)
+    show nicola at walkin (1.9, .9)
+    show shinjini at walkin (1.9, .65)
+
+    
+    nicola "Austin wasn't as helpful as I thought he'd be. We need to look for some leads."
+    irene "Almost like we didn't know how to incorporate him into the plot."
+    nicola "Anyway, we need to focus on finding out why people are turning into-{p=.75}{nw}"
+    stop music
+    "???" "BOO!"
+    with hpunch
+    play sound scream
+    with hpunch
+    james "AAAAAAAHHHHH!"
+    play music mus_alone fadein 1
+    shinjini "Sounds like Steven. Is Steven around?"
+    irene "Steven, where are you?!!?!"
+    play sound message
+    pause .75
+    irene "Message..."
+    
+    scene investigation movie with fade
+    pause 2
+    show irene_phone with dissolve:
+        xalign 0.5
+    irene "Let's see..."
+    show m_0 at imgpos with dissolve
+    pause 1.5
+    irene "Steven contacted me."
+    shinjini "Ask him where Steven is."
+    play sound message_sent
+    show m_1 at imgpos
+    hide m_0
+    irene "Hmm..."
+    pause .5
+    play sound message_sent
+    show m_2 at imgpos
+    hide m_1
+    pause 2
+    play sound message_sent
+    show m_3 at imgpos
+    hide m_2
+    pause 2
+    play sound message_sent
+    show m_4 at imgpos
+    hide m_3
+    pause 2
+    
+    irene "Ugh, Steven..."
+    irene "How should I respond..."
+    menu:
+           "Inquire regarding his introductory statement requesting assistance.":
+            jump help
+           "Awe him with the power of expletives and profanity.":
+            jump cuss
+           "Engage in a rather thoughtful dialectic while musing about the existences of objects.":
+            jump wut
+           
+label help:
+    play sound message_sent
+    show m_5a at imgpos
+    hide m_4
+    pause 2
+    play sound message_sent
+    show m_6a at imgpos
+    hide m_5a
+    pause 2
+    play sound message_sent
+    show m_7a at imgpos
+    hide m_6a
+    pause 2
+    play sound message_sent
+    show m_8a at imgpos
+    hide m_7a
+    pause 2
+    play sound message_sent
+    show m_9a at imgpos
+    hide m_8a
+    pause 2
+    play sound message_sent
+    show m_10a at imgpos
+    hide m_9a
+    pause 2
+    play sound message_sent
+    show m_11a at imgpos
+    hide m_10a
+    pause 2
+    
+    hide m_11a with dissolve
+    jump cont
+    
+label cuss:
+    play sound message_sent
+    show m_5b at imgpos
+    hide m_4
+    pause 2
+    play sound message_sent
+    show m_6b at imgpos
+    hide m_5b
+    pause 2
+    play sound message_sent
+    show m_7b at imgpos
+    hide m_6b
+    pause 2
+    play sound message_sent
+    show m_8b at imgpos
+    hide m_7b
+    pause 2
+    play sound message_sent
+    show m_9b at imgpos
+    hide m_8b
+    pause 2
+    play sound message_sent
+    show m_10b at imgpos
+    hide m_9b
+    pause 2
+    
+    hide m_10b with dissolve
+    jump cont
+    
+label wut:
+    play sound message_sent
+    show m_5c at imgpos
+    hide m_4
+    pause 2
+    play sound message_sent
+    show m_6c at imgpos
+    hide m_5c
+    pause 2
+    play sound message_sent
+    show m_7c at imgpos
+    hide m_6c
+    pause 2
+    play sound message_sent
+    show m_8c at imgpos
+    hide m_7c
+    pause 2
+    play sound message_sent
+    show m_9c at imgpos
+    hide m_8c
+    pause 2
+    play sound message_sent
+    show m_10c at imgpos
+    hide m_9c
+    pause 1
+    irene "Steven..!"
+    shinjini "Just make him come over here, then."
+    pause 1
+    play sound message_sent
+    show m_11c at imgpos
+    hide m_10c
+    pause 2
+    play sound message_sent
+    show m_12c at imgpos
+    hide m_11c
+    pause 2
+    play sound message_sent
+    show m_13c at imgpos
+    hide m_12c
+    pause 2
+    play sound message_sent
+    show m_14c at imgpos
+    hide m_13c
+    pause 2
+    
+    hide m_14c with dissolve
+    jump cont
+    
+label cont:
+    irene "Steven should appear soo-{p=.5}{nw}"
+    stop music
+    play sound clang
+    with hpunch
+    irene "Huh?"
+    shinjini "The recycling bin! Is it also possessed by a demon?"
+    
+    scene bg lounge3_garbage with fade
+    show james at appear ( .15)
+    show irene flip at appear (.01)
+    show nicola at appear (.99)
+    show shinjini at appear (.85)
+    
+    play sound clang
+    with hpunch
+    nicola "I've got a bad feeling about this..."
+    james "Doesn't seem to be very friendly..."
+    
+    #show explosion at appear(.5)
+    #
     
     # This ends the game.
 
